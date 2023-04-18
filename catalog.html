@@ -16,16 +16,24 @@
         </div>
         <nav class="main-site-navigation">
           <ul class="site-navigation">
-            <a href="#">Каталог</a>
-            <a href="#">Акции</a>
-            <a href="#">Доставка</a>
-            <a href="#">Контакты</a>
+            <li class="main-navigation-elements">
+              <a href="#">Каталог</a>
+            </li>
+            <li class="main-navigation-elements">
+              <a href="#">Акции</a>
+            </li>
+            <li class="main-navigation-elements">
+              <a href="#">Доставка</a>
+            </li>
+            <li class="main-navigation-elements">
+              <a href="#">Контакты</a>
+            </li>
           </ul>
         </nav>
         <nav class="product-navigation">
           <ul class="interaction-with-goods">
             <li class="find-a-product">
-              <form сlass="find-a-product">
+              <form>
                 <input type="text" placeholder="Поиск товаров" />
                 <button type="submit">
                   <img src="images/search.svg" alt="Поиск товаров" />
@@ -50,9 +58,15 @@
       <section class="page-navigation">
         <aside class="page-navigation">
           <ul class="page-navigation">
-            <a href="#">Главная</a>
-            <a href="#">Каталог</a>
-            <a href="#">Мужские часы</a>
+            <li class="page-navigation-elements">
+              <a href="#">Главная</a>
+            </li>
+            <li class="page-navigation-elements">
+              <a href="#">Каталог</a>
+            </li>
+            <li class="page-navigation-elements">
+              <a href="#">Мужские часы</a>
+            </li>
           </ul>
         </aside>
       </section>
@@ -62,83 +76,91 @@
         </div>
         <div class="sorting">
           <p>Сортировать по:</p>
-          <select class="watch-sorting" name="" id="">
+          <select class="watch-sorting">
             <option value="popular">популярности</option>
           </select>
         </div>
         <aside class="sorting-clocks">
           <div class="filter-dropdown">
-            <li class="filter-form-item">
-              <div class="filter-dropdown-title">
-                <h6 class="title-filter">Цена</h6>
-              </div>
-              <div class="filter-dropdown-content">
-                <div class="range-slider">
-                  <input
-                    class="range-slider__slider"
-                    type="text"
-                    name="price_range"
-                  />
-                  <div class="range-slider-range">
-                    <div class="range-slider-range-item">
-                      <div class="range-slider-range-item-text">от</div>
-                      <input
-                        class="range-slider-range-item-number-range-slider-range-item-number-from"
-                        type="text"
-                      />
-                    </div>
-                    <div class="range-slider-range-item">
-                      <div class="range-slider-range-item-text">до</div>
-                      <input
-                        class="range-slider-range-item-number-range-slider-range-item-number-to"
-                        type="text"
-                      />
+            <ul class="filter-dropdown-items">
+              <li class="filter-form-item">
+                <div class="filter-dropdown-title">
+                  <h6 class="title-filter">Цена</h6>
+                </div>
+                <div class="filter-dropdown-content">
+                  <div class="range-slider">
+                    <input
+                      class="range-slider__slider"
+                      type="text"
+                      name="price_range"
+                    />
+                    <div class="range-slider-range">
+                      <div class="range-slider-range-item">
+                        <div class="range-slider-range-item-text">от</div>
+                        <input
+                          class="range-slider-range-item-number-range-slider-range-item-number-from"
+                          type="text"
+                        />
+                      </div>
+                      <div class="range-slider-range-item">
+                        <div class="range-slider-range-item-text">до</div>
+                        <input
+                          class="range-slider-range-item-number-range-slider-range-item-number-to"
+                          type="text"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </li>
-            <li class="filter-form-item">
-              <div class="filter-dropdown-title">
-                <h6 class="title-filter">Бренд</h6>
-              </div>
-              <div class="filter-dropdown-content">
-                <form action="#" class="filter-dropdown-brand">
-                  <input type="checkbox" id="id-techne-brand" name="m-sex" />
-                  <label for="id-techne-brand">Techne</label>
-                  <input type="checkbox" id="id-rado-brand" name="w-sex" />
-                  <label for="id-rado-brand">Rado</label>
-                  <input type="checkbox" id="id-bvlgari-brand" name="m-sex" />
-                  <label for="id-bvlgari-brand">Bvlgari</label>
-                  <input type="checkbox" id="id-tissot-brand" name="w-sex" />
-                  <label for="id-tissot-brand">Tissot</label>
-                  <input type="checkbox" id="id-omega-brand" name="m-sex" />
-                  <label for="id-omega-brand">Omega</label>
-                  <input type="checkbox" id="id-montblanc-brand" name="w-sex" />
-                  <label for="id-montblanc-brand">Montblanc</label>
-                </form>
-              </div>
-            </li>
-            <li class="filter-form-item">
-              <div class="filter-dropdown-title">
-                <h6 class="title-filter">Механизм</h6>
-              </div>
-            </li>
-            <li class="filter-form-item">
-              <div class="filter-dropdown-title">
-                <h6 class="title-filter">Материал</h6>
-              </div>
-            </li>
-            <li class="filter-form-item">
-              <div class="filter-dropdown-title">
-                <h6 class="title-filter">Цвет</h6>
-              </div>
-            </li>
-            <li>
-              <div class="filter-form-item-reset">
-                <button class="basic-link" type="reset">Сбросить фильтр</button>
-              </div>
-            </li>
+              </li>
+              <li class="filter-form-item">
+                <div class="filter-dropdown-title">
+                  <h6 class="title-filter">Бренд</h6>
+                </div>
+                <div class="filter-dropdown-content">
+                  <form action="#" class="filter-dropdown-brand">
+                    <input type="checkbox" id="id-techne-brand" name="m-sex" />
+                    <label for="id-techne-brand">Techne</label>
+                    <input type="checkbox" id="id-rado-brand" name="w-sex" />
+                    <label for="id-rado-brand">Rado</label>
+                    <input type="checkbox" id="id-bvlgari-brand" name="m-sex" />
+                    <label for="id-bvlgari-brand">Bvlgari</label>
+                    <input type="checkbox" id="id-tissot-brand" name="w-sex" />
+                    <label for="id-tissot-brand">Tissot</label>
+                    <input type="checkbox" id="id-omega-brand" name="m-sex" />
+                    <label for="id-omega-brand">Omega</label>
+                    <input
+                      type="checkbox"
+                      id="id-montblanc-brand"
+                      name="w-sex"
+                    />
+                    <label for="id-montblanc-brand">Montblanc</label>
+                  </form>
+                </div>
+              </li>
+              <li class="filter-form-item">
+                <div class="filter-dropdown-title">
+                  <h6 class="title-filter">Механизм</h6>
+                </div>
+              </li>
+              <li class="filter-form-item">
+                <div class="filter-dropdown-title">
+                  <h6 class="title-filter">Материал</h6>
+                </div>
+              </li>
+              <li class="filter-form-item">
+                <div class="filter-dropdown-title">
+                  <h6 class="title-filter">Цвет</h6>
+                </div>
+              </li>
+              <li>
+                <div class="filter-form-item-reset">
+                  <button class="basic-link" type="reset">
+                    Сбросить фильтр
+                  </button>
+                </div>
+              </li>
+            </ul>
           </div>
         </aside>
         <section class="watch-models">
@@ -226,7 +248,7 @@
           <ul class="product-pages">
             <li class="product-page-numbers">
               <a href="#" class="previous-page">
-                <img src="images/Vector 2.jpg" alt="Предыдущая страница" />
+                <img src="images/Vector2.jpg" alt="Предыдущая страница" />
               </a>
             </li>
             <li class="product-page-numbers">
@@ -246,7 +268,7 @@
             </li>
             <li class="product-page-numbers">
               <a href="#" class="next-page">
-                <img src="images/Vector 2.2.jpg" alt="Следующая страница" />
+                <img src="images/Vector2.2.jpg" alt="Следующая страница" />
               </a>
             </li>
           </ul>
@@ -309,8 +331,14 @@
         </a>
       </div>
       <address class="contact-info">
-        <p class="contact-number">8 (499) 450-47-97</p>
-        <p class="contact-email">info@conquest.watch.ru</p>
+        <p>
+          <a href="tel:84994504797" class="contact-number">8(499)450-47-97</a>
+        </p>
+        <p>
+          <a href="mailto:info@conquest.watch.ru" class="contact-email"
+            >info@conquest.watch.ru</a
+          >
+        </p>
       </address>
       <nav class="company-information">
         <h3>О компании</h3>
